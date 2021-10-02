@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+*{margin: 0; padding: 0;box-sizing:border-box;font-family: sans-serif;}
+
+nav{
+    background: #fff;
+    box-shadow:  0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.text-content h1{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+.text-content p{
+    font-family: 'Segoe UI';
+}
+.content .col-4{
+    /* border: 1px solid; */
+    margin-top: 60px;
+}
+.icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color:#4285F4;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 200px;
+}
+.content .card{
+    transition: all .2s linear;
+    background-color: #F1F1F1;
+}
+.content .card:hover{
+    background-color: #4285F4;
+    color: #fff;
+    transform: translateY(-10px);
+}
+.content .card:hover> .icon{
+    background-color: #fff;
+    color: #4285F4;
+    /* transform: translateY(-10px); */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width:991px) {
+    .contentImg{
+        opacity: .7;
+        position: relative;
+        top: -417px;
+        z-index: -1;
+    }
+}
